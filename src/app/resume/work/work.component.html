@@ -1,0 +1,16 @@
+<section class="experience">
+    <p class="header-title">Work Experience</p>
+    <div class="container-box" *ngFor="let item of works">
+        <div class="container-box-title">
+            <p >{{item.from}} - {{item.to}}</p>
+            <p class="header-title"> {{ item.position}} </p>
+        </div>
+        <div class="work-container-box-detail">
+            <div class="basic-info-detail">
+                <p class="header-title"> {{ item.company}} </p>
+                <p *ngFor="let desc of item.description">{{desc}} </p>
+            </div>   
+        </div>
+    </div>
+</section> 
+
